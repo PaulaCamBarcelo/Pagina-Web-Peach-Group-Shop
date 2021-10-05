@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.contenedor{ /*Contenedor principal de toda la pagina*/
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 100px 0;
+    
+}
+.main{
+    padding: 20px;
+}
+/***********************Inicio******************************/
+header{
+ height: 100vh;
+ background-image: linear-gradient(to right, rgba(203, 255, 119, 0.212) 0%, rgba(149, 255, 122, 0.377) 0%, rgba(178, 255, 127, 0.555) 21%, rgba(204, 249, 133, 0.589) 52%, rgba(207, 174, 84, 0.349) 78%,
+  rgba(178, 92, 42, 0.404) 100%), url(../img/inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+   
+.head{
+    padding: 0;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    color: rgb(173, 104, 24);
+}
+
+ /************MENU NAVEGADOR*****************/
+
+.menu-navegacion{
+    width: 99vw;
+    background:rgb(0, 0, 0);
+    display: flex; 
+    padding: 15px;
+    position:fixed;
+    align-items: center;
+    justify-content:end; 
+}
+
+.menu-navegacion a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    
+   
+}
+.menu-navegacion b{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    
+   
+}
+.menu-navegacion a:hover{
+    color: rgba(179, 119, 41, 0.911);
+  
+}
+.logo{
+    
+    position: fixed;
+    padding: 10px;
+    
+}
+.logo img{
+    width: 40%;
+    
+}
+.buscar{
+    width: 30vw;
+    display: flex; 
+    position:fixed;
+    padding-top: 20px; 
+    padding-left: 150px;
+  
+}
+.buscar input{
+    width: 300px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+.button{
+    position: absolute;
+    top: 20;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    border: 1px solid silver;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+
+
+/****************Introduccion******************/
+.introduccion{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 100px 0;
+    
+    
+}
+.intro{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+
+/*****************************los titulos**********************************/
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(180, 100, 34);
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+/****************OFERTAS******************/
+.service-oferta{
+    background-color: rgb(253, 253, 253);
+    margin: auto;
+    padding: 100px;
+}
+
+.container-product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.producto{
+    border: 1px solid rgb(173, 108, 32);
+    padding: 10px;
+    text-align: center;
+}
+
+.producto:before{
+    content: "NEW";
+    background: tomato;  
+    padding: 10px;
+    color: rgb(250, 245, 245);
+    
+}
+
+.product__img{
+    width: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px;
+ 
+   
+}
+
+.product__title{
+    text-align: center;
+    color: rgba(70, 61, 39, 0.664);
+}
+
+.product__price{
+    color: rgb(175, 87, 37);
+    font-weight: bold;
+}
+
+.product__icon a{
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+
+/******************ACCESORIOS****************/
+.contenedor1{
+ background: rgb(255, 255, 254);
+ margin: auto;
+ padding: 100px;
+}
+.contenedor-accesorios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.accesorios{
+    border: 1px solid rgb(173, 108, 32);
+    padding: 10px;
+    text-align: center;
+}
+
+.secciones{
+    text-align: center;
+    color: rgb(194, 110, 62);
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+/*********************NOSOTROS**********************/
+.contenedor2{
+    background: rgb(255, 255, 254);
+    margin: auto;
+    padding: 100px;
+}
+.contenedor-empresa{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.img-empresa{
+    width: 10%;
+    display: block;
+    margin-bottom: 40px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 200px;
+}
+.empresa-des{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*******************FOOTER*PIE DE PAGINA*******************/
+.piedepagina{
+    background-color: #000000;
+    padding-bottom: 0.1px;
+
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.contact-us{
+    width: 30%;
+    color: rgb(173, 121, 24);
+    
+    
+}
+.brand{
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+.brand+p{
+    font-weight: 500;
+    display: flex;
+    
+}
+.localizacion{
+    width: 30%;
+    display: flex; 
+    margin-top: 20px;
+}
+.localizacion iframe{
+    display: flex;  
+    margin: auto;
+    width:300px;
+    height: 200px;
+}
+.social-media{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;    
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 40px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid cornsilk;
+    border-radius: 50%;
+    text-align:center;
+    color: #fff;
+
+}
+.social-media-icon:hover{
+    background: rgb(189, 130, 54);
+    color: rgb(255, 255, 255);
+}
+.social-media-icon{
+   font-size: 30px;
+   line-height: 60px;
+
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+
+
+/*************************RESPONSIVE*************************************/
+
+@media screen and (max-width:800px) {
+    .menu-navegacion{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+
+    }
+    .contenedor-servicio{
+        width: 80px;
+        margin-bottom: 40px;
+    }
+    .cheklist{
+        width: 70px;
+    }
+    .services{
+        margin-bottom: 30px;
+    }
+    .agregar-imagen{
+        width: 80%;
+    }
+    .img-portafolio{
+        width: 45%;
+    }
+    .cont-expert{/*conenedor-expert*/
+        width: 80%;
+    }
+    
+
+    /******FOOTER*******************/
+    .contenedor-tecnologia{
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-i{
+        margin-left: 0;
+    }
+    .contac-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+}
+/************************************************/
